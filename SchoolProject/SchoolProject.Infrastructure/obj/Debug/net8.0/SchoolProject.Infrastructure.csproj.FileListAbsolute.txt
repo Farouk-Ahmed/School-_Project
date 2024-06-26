@@ -1,0 +1,17 @@
+F:\Farouk\ITI\dot Net API\Clean Architecture Projects\SchoolProject\SchoolProject.Infrastructure\bin\Debug\net8.0\SchoolProject.Infrastructure.deps.json
+F:\Farouk\ITI\dot Net API\Clean Architecture Projects\SchoolProject\SchoolProject.Infrastructure\bin\Debug\net8.0\SchoolProject.Infrastructure.runtimeconfig.json
+F:\Farouk\ITI\dot Net API\Clean Architecture Projects\SchoolProject\SchoolProject.Infrastructure\bin\Debug\net8.0\SchoolProject.Infrastructure.dll
+F:\Farouk\ITI\dot Net API\Clean Architecture Projects\SchoolProject\SchoolProject.Infrastructure\bin\Debug\net8.0\SchoolProject.Infrastructure.pdb
+F:\Farouk\ITI\dot Net API\Clean Architecture Projects\SchoolProject\SchoolProject.Infrastructure\bin\Debug\net8.0\SchoolProject.Data.dll
+F:\Farouk\ITI\dot Net API\Clean Architecture Projects\SchoolProject\SchoolProject.Infrastructure\bin\Debug\net8.0\SchoolProject.Data.pdb
+F:\Farouk\ITI\dot Net API\Clean Architecture Projects\SchoolProject\SchoolProject.Infrastructure\obj\Debug\net8.0\SchoolProject.Infrastructure.csproj.AssemblyReference.cache
+F:\Farouk\ITI\dot Net API\Clean Architecture Projects\SchoolProject\SchoolProject.Infrastructure\obj\Debug\net8.0\SchoolProject.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+F:\Farouk\ITI\dot Net API\Clean Architecture Projects\SchoolProject\SchoolProject.Infrastructure\obj\Debug\net8.0\SchoolProject.Infrastructure.AssemblyInfoInputs.cache
+F:\Farouk\ITI\dot Net API\Clean Architecture Projects\SchoolProject\SchoolProject.Infrastructure\obj\Debug\net8.0\SchoolProject.Infrastructure.AssemblyInfo.cs
+F:\Farouk\ITI\dot Net API\Clean Architecture Projects\SchoolProject\SchoolProject.Infrastructure\obj\Debug\net8.0\SchoolProject.Infrastructure.csproj.CoreCompileInputs.cache
+F:\Farouk\ITI\dot Net API\Clean Architecture Projects\SchoolProject\SchoolProject.Infrastructure\obj\Debug\net8.0\SchoolProject.Infrastructure.csproj.CopyComplete
+F:\Farouk\ITI\dot Net API\Clean Architecture Projects\SchoolProject\SchoolProject.Infrastructure\obj\Debug\net8.0\SchoolProject.Infrastructure.dll
+F:\Farouk\ITI\dot Net API\Clean Architecture Projects\SchoolProject\SchoolProject.Infrastructure\obj\Debug\net8.0\refint\SchoolProject.Infrastructure.dll
+F:\Farouk\ITI\dot Net API\Clean Architecture Projects\SchoolProject\SchoolProject.Infrastructure\obj\Debug\net8.0\SchoolProject.Infrastructure.pdb
+F:\Farouk\ITI\dot Net API\Clean Architecture Projects\SchoolProject\SchoolProject.Infrastructure\obj\Debug\net8.0\SchoolProject.Infrastructure.genruntimeconfig.cache
+F:\Farouk\ITI\dot Net API\Clean Architecture Projects\SchoolProject\SchoolProject.Infrastructure\obj\Debug\net8.0\ref\SchoolProject.Infrastructure.dll
