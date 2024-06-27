@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+fZnpcn9Zu5oaWEhjO1dUrF2tKqBm0LyzAY7cv6V8q51Bg01dAQKNkRoT2qDpTXL0FFuTwkDS1dsvmqPZhceHA==",
+  "dgSpecHash": "SKj9/l20ZcXNAAtZupLaQvJ8T+dGqsDofeeucKZt7+Lr6SWtvzaypRlRD2aZptVEK5kjpcO2cxfEitB5T3stSw==",
   "success": true,
-  "projectFilePath": "F:\\Farouk\\ITI\\dot Net API\\Clean Architecture Projects\\SchoolProject\\SchoolProject.Service\\SchoolProject.Service.csproj",
+  "projectFilePath": "F:\\Farouk\\ITI\\dot Net API\\Clean Architecture Projects\\School-_Project\\SchoolProject\\SchoolProject.Service\\SchoolProject.Service.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\farou\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\farou\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

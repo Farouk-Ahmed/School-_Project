@@ -2930,11 +2930,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Farouk\\ITI\\dot Net API\\Clean Architecture Projects\\SchoolProject\\SchoolProject.Core\\SchoolProject.Core.csproj",
+      "projectUniqueName": "F:\\Farouk\\ITI\\dot Net API\\Clean Architecture Projects\\School-_Project\\SchoolProject\\SchoolProject.Core\\SchoolProject.Core.csproj",
       "projectName": "SchoolProject.Core",
-      "projectPath": "F:\\Farouk\\ITI\\dot Net API\\Clean Architecture Projects\\SchoolProject\\SchoolProject.Core\\SchoolProject.Core.csproj",
+      "projectPath": "F:\\Farouk\\ITI\\dot Net API\\Clean Architecture Projects\\School-_Project\\SchoolProject\\SchoolProject.Core\\SchoolProject.Core.csproj",
       "packagesPath": "C:\\Users\\farou\\.nuget\\packages\\",
-      "outputPath": "F:\\Farouk\\ITI\\dot Net API\\Clean Architecture Projects\\SchoolProject\\SchoolProject.Core\\obj\\",
+      "outputPath": "F:\\Farouk\\ITI\\dot Net API\\Clean Architecture Projects\\School-_Project\\SchoolProject\\SchoolProject.Core\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\farou\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -2951,14 +2951,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "F:\\Farouk\\ITI\\dot Net API\\Clean Architecture Projects\\SchoolProject\\SchoolProject.Data\\SchoolProject.Data.csproj": {
-              "projectPath": "F:\\Farouk\\ITI\\dot Net API\\Clean Architecture Projects\\SchoolProject\\SchoolProject.Data\\SchoolProject.Data.csproj"
+            "F:\\Farouk\\ITI\\dot Net API\\Clean Architecture Projects\\School-_Project\\SchoolProject\\SchoolProject.Data\\SchoolProject.Data.csproj": {
+              "projectPath": "F:\\Farouk\\ITI\\dot Net API\\Clean Architecture Projects\\School-_Project\\SchoolProject\\SchoolProject.Data\\SchoolProject.Data.csproj"
             },
-            "F:\\Farouk\\ITI\\dot Net API\\Clean Architecture Projects\\SchoolProject\\SchoolProject.Infrastructure\\SchoolProject.Infrastructure.csproj": {
-              "projectPath": "F:\\Farouk\\ITI\\dot Net API\\Clean Architecture Projects\\SchoolProject\\SchoolProject.Infrastructure\\SchoolProject.Infrastructure.csproj"
+            "F:\\Farouk\\ITI\\dot Net API\\Clean Architecture Projects\\School-_Project\\SchoolProject\\SchoolProject.Infrastructure\\SchoolProject.Infrastructure.csproj": {
+              "projectPath": "F:\\Farouk\\ITI\\dot Net API\\Clean Architecture Projects\\School-_Project\\SchoolProject\\SchoolProject.Infrastructure\\SchoolProject.Infrastructure.csproj"
             },
-            "F:\\Farouk\\ITI\\dot Net API\\Clean Architecture Projects\\SchoolProject\\SchoolProject.Service\\SchoolProject.Service.csproj": {
-              "projectPath": "F:\\Farouk\\ITI\\dot Net API\\Clean Architecture Projects\\SchoolProject\\SchoolProject.Service\\SchoolProject.Service.csproj"
+            "F:\\Farouk\\ITI\\dot Net API\\Clean Architecture Projects\\School-_Project\\SchoolProject\\SchoolProject.Service\\SchoolProject.Service.csproj": {
+              "projectPath": "F:\\Farouk\\ITI\\dot Net API\\Clean Architecture Projects\\School-_Project\\SchoolProject\\SchoolProject.Service\\SchoolProject.Service.csproj"
             }
           }
         }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "a8LUEavCW5g16LtKZ5PuMsAuAK9fqltxQ2225bqkkZpL71WiFF6Q9iMq2gX3cQA0KAXANXZ+MJ6KOcckoeQNNA==",
+  "dgSpecHash": "QIvzJ0rgGCK/9xQ7NeByUGgYto1pn6FEHu41fD7t4394yJmB6swUCne+iW3EUdFUwqMWP268gzcycqNOK6OCxg==",
   "success": true,
-  "projectFilePath": "F:\\Farouk\\ITI\\dot Net API\\Clean Architecture Projects\\SchoolProject\\SchoolProject.Api\\SchoolProject.Api.csproj",
+  "projectFilePath": "F:\\Farouk\\ITI\\dot Net API\\Clean Architecture Projects\\School-_Project\\SchoolProject\\SchoolProject.Api\\SchoolProject.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\farou\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
     "C:\\Users\\farou\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",

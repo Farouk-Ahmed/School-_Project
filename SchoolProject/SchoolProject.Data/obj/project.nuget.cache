@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/mA1dEXUICNfTsHgEoMJHRLDUrDA++OqeNRSiIbXTYu98WCRW0BuBdKDAv7JKkGDPFDdsFsxpyYjBclFk+ILyQ==",
+  "dgSpecHash": "UWutYCOKTly2U76ifQv2xtuPz/31pX2qc8NCgGh9ikUU23dWmu/eGNVCZClbu2DooAi7dw5cUXNsEmh62CjV3Q==",
   "success": true,
-  "projectFilePath": "F:\\Farouk\\ITI\\dot Net API\\Clean Architecture Projects\\SchoolProject\\SchoolProject.Data\\SchoolProject.Data.csproj",
+  "projectFilePath": "F:\\Farouk\\ITI\\dot Net API\\Clean Architecture Projects\\School-_Project\\SchoolProject\\SchoolProject.Data\\SchoolProject.Data.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

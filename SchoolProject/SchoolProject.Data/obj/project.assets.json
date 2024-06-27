@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Farouk\\ITI\\dot Net API\\Clean Architecture Projects\\SchoolProject\\SchoolProject.Data\\SchoolProject.Data.csproj",
+      "projectUniqueName": "F:\\Farouk\\ITI\\dot Net API\\Clean Architecture Projects\\School-_Project\\SchoolProject\\SchoolProject.Data\\SchoolProject.Data.csproj",
       "projectName": "SchoolProject.Data",
-      "projectPath": "F:\\Farouk\\ITI\\dot Net API\\Clean Architecture Projects\\SchoolProject\\SchoolProject.Data\\SchoolProject.Data.csproj",
+      "projectPath": "F:\\Farouk\\ITI\\dot Net API\\Clean Architecture Projects\\School-_Project\\SchoolProject\\SchoolProject.Data\\SchoolProject.Data.csproj",
       "packagesPath": "C:\\Users\\farou\\.nuget\\packages\\",
-      "outputPath": "F:\\Farouk\\ITI\\dot Net API\\Clean Architecture Projects\\SchoolProject\\SchoolProject.Data\\obj\\",
+      "outputPath": "F:\\Farouk\\ITI\\dot Net API\\Clean Architecture Projects\\School-_Project\\SchoolProject\\SchoolProject.Data\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\farou\\AppData\\Roaming\\NuGet\\NuGet.Config",
