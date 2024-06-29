@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "1m4487nQ3wJjy9pUiGWnt5NcS7lpwoAhTHgLZ72eA85iMJSWgbTE1mY1Xc3qJ3Vr0VrNfS6wqDa4XdYYSDRXrA==",
+  "dgSpecHash": "psSvurhlg0eNoSaBO3f5OEXVZlU8R4lLhb77BZYExWTgGzr3lRYfgEPXGiEjocBzNsAKgKjMhY8ReD8/ZjPR+Q==",
   "success": true,
   "projectFilePath": "F:\\Farouk\\ITI\\dot Net API\\Clean Architecture Projects\\School-_Project\\SchoolProject\\SchoolProject.Core\\SchoolProject.Core.csproj",
   "expectedPackageFiles": [
@@ -8,8 +8,12 @@
     "C:\\Users\\farou\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",
     "C:\\Users\\farou\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\farou\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
+    "C:\\Users\\farou\\.nuget\\packages\\fluentvalidation\\11.9.2\\fluentvalidation.11.9.2.nupkg.sha512",
+    "C:\\Users\\farou\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.9.2\\fluentvalidation.dependencyinjectionextensions.11.9.2.nupkg.sha512",
     "C:\\Users\\farou\\.nuget\\packages\\mediatr\\12.0.1\\mediatr.12.0.1.nupkg.sha512",
     "C:\\Users\\farou\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
+    "C:\\Users\\farou\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.2.0\\microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512",
+    "C:\\Users\\farou\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.2.0\\microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512",
     "C:\\Users\\farou\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\farou\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\farou\\.nuget\\packages\\microsoft.data.sqlclient\\5.1.5\\microsoft.data.sqlclient.5.1.5.nupkg.sha512",

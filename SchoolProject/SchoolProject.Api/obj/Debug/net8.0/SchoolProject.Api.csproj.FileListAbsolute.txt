@@ -295,3 +295,5 @@ F:\Farouk\ITI\dot Net API\Clean Architecture Projects\School-_Project\SchoolProj
 F:\Farouk\ITI\dot Net API\Clean Architecture Projects\School-_Project\SchoolProject\SchoolProject.Api\obj\Debug\net8.0\SchoolProject.Api.pdb
 F:\Farouk\ITI\dot Net API\Clean Architecture Projects\School-_Project\SchoolProject\SchoolProject.Api\obj\Debug\net8.0\SchoolProject.Api.genruntimeconfig.cache
 F:\Farouk\ITI\dot Net API\Clean Architecture Projects\School-_Project\SchoolProject\SchoolProject.Api\obj\Debug\net8.0\ref\SchoolProject.Api.dll
+F:\Farouk\ITI\dot Net API\Clean Architecture Projects\School-_Project\SchoolProject\SchoolProject.Api\bin\Debug\net8.0\FluentValidation.dll
+F:\Farouk\ITI\dot Net API\Clean Architecture Projects\School-_Project\SchoolProject\SchoolProject.Api\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
