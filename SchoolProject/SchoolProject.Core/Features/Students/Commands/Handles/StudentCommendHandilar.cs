@@ -9,7 +9,9 @@ namespace SchoolProject.Core.Features.Students.Commands.Handles
 {
 	public class StudentCommendHandilar : ResponseHandler,
 										IRequestHandler<AddStudentComment, Response<string>>,
-										IRequestHandler<EditStudentCommand, Response<string>>
+
+										IRequestHandler<EditStudentCommand, Response<string>>,
+										IRequestHandler<DeleteStudeentCommand, Response<string>>
 	{
 		private readonly IStudentServes _studentServes;
 		private readonly IMapper _mapper;
@@ -30,7 +32,7 @@ namespace SchoolProject.Core.Features.Students.Commands.Handles
 		public async Task<Response<string>> Handle(EditStudentCommand request, CancellationToken cancellationToken)
 		{
 			//Check if Id is Exist or not
-			var Student = await _studentServes.GetStudentByIDsAsync(request.Id);
+			var Student = await _studentServes.GetByIDsAsync(request.Id);
 			//Return Not Found
 			if (Student == null) return NotFound<string>("Student Not Found ");
 			//Mapping Between Request and student
@@ -41,5 +43,19 @@ namespace SchoolProject.Core.Features.Students.Commands.Handles
 			if (Ruslt == "Success") return Success($"Edit Sussessfully{StudentMapper.StudID}");
 			else return BadRequest<string>();
 		}
+
+		public async Task<Response<string>> Handle(DeleteStudeentCommand request, CancellationToken cancellationToken)
+		{
+			//Check if Id is Exist or not
+			var Student = await _studentServes.GetByIDsAsync(request.Id);
+			//Return Not Found
+			if (Student == null) return NotFound<string>("Student Not Found ");
+			//Call Service that make Delete
+			var Ruslt = await _studentServes.DeleteAsync(Student);
+			//Return response
+			if (Ruslt == "Success") return Deleted<string>($"Delete Sussessfully{request.Id}");
+			else return BadRequest<string>();
+		}
+
 	}
 }

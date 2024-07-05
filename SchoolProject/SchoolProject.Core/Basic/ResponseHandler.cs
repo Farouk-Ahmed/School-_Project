@@ -1,24 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace SchoolProject.Core.Basic
+﻿namespace SchoolProject.Core.Basic
 {
 	public class ResponseHandler
 	{
-        public ResponseHandler()
-        {
-            
-        }
-		public Response<T> Deleted<T>()
+		public ResponseHandler()
+		{
+
+		}
+		public Response<T> Deleted<T>(string Message = null)
 		{
 			return new Response<T>()
 			{
 				StatusCode = System.Net.HttpStatusCode.OK,
 				Succeeded = true,
-				Message = "Deleted Successfully"
+				Message = Message == null ? "Deleted Successfully" : Message
 			};
 		}
 		public Response<T> Success<T>(T entity, object Meta = null)
