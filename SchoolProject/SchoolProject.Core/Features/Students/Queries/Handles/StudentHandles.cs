@@ -4,13 +4,17 @@ using SchoolProject.Core.Basic;
 using SchoolProject.Core.Features.Students.Queries.Models;
 using SchoolProject.Core.Features.Students.Queries.Responce;
 using SchoolProject.Core.Features.Students.Queries.Results;
+using SchoolProject.Core.Wrappers;
+using SchoolProject.Data.Entityes;
 using SchoolProject.Service.Abstrcte;
+using System.Linq.Expressions;
 
 namespace SchoolProject.Core.Features.Students.Queries.Handles
 {
 	public class StudentHandles : ResponseHandler,
 								IRequestHandler<GetStudentQuary, Response<List<GetStudentResponce>>>,
-								IRequestHandler<GetStudentByIdQuarey, Response<GetSingelStudentResponse>>
+								IRequestHandler<GetStudentByIdQuarey, Response<GetSingelStudentResponse>>,
+								IRequestHandler<GetStudentPaginatedListQuery, PaginationResult<GetStudentPaginatedListResponse>>
 
 	{
 		#region Fields
@@ -38,6 +42,15 @@ namespace SchoolProject.Core.Features.Students.Queries.Handles
 			if (GetStudentById == null) return NotFound<GetSingelStudentResponse>("The Object Is Not Found");
 			var StudentByIDMapper = _mapper.Map<GetSingelStudentResponse>(GetStudentById);
 			return Success(StudentByIDMapper);
+		}
+
+		public async Task<PaginationResult<GetStudentPaginatedListResponse>> Handle(GetStudentPaginatedListQuery request, CancellationToken cancellationToken)
+		{
+			Expression<Func<Student, GetStudentPaginatedListResponse>> exception = e => new GetStudentPaginatedListResponse(e.StudID, e.Name, e.Address, e.Phone, e.Department.DName);
+			//var querabel = _studentServes.GetStudentsQueryable();
+			var FilterQueryble = _studentServes.FilterStudentsQueryable(request.Search);
+			var paginationList = await FilterQueryble.Select(exception).ToPaginationListAsync(request.PageNumber, request.PageSize);
+			return paginationList;
 		}
 		#endregion
 	}
