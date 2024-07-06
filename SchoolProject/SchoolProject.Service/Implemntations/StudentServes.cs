@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using SchoolProject.Data.Entityes;
+using SchoolProject.Data.Helpers;
 using SchoolProject.Infrastructure.Abstracts;
 using SchoolProject.Service.Abstrcte;
 
@@ -100,7 +101,7 @@ namespace SchoolProject.Service.Implemntations
 			return _studentRepository.GetTableNoTracking().Include(x => x.Department).AsQueryable();
 		}
 
-		public IQueryable<Student> FilterStudentsQueryable(string search)
+		public IQueryable<Student> FilterStudentsQueryable(StudentOrderingEnum orderingEnum, string search)
 		{
 			var querable = _studentRepository.GetTableNoTracking().Include(x => x.Department).AsQueryable();
 			if (search != null)
@@ -108,8 +109,29 @@ namespace SchoolProject.Service.Implemntations
 
 				querable = querable.Where(x => x.Name.Contains(search) || x.Address.Contains(search));
 			}
+			switch (orderingEnum)
+			{
+				case StudentOrderingEnum.StudID:
+					querable = querable.OrderBy(x => x.StudID);
+					break;
+				case StudentOrderingEnum.Name:
+					querable = querable.OrderBy(x => x.Name);
+					break;
+				case StudentOrderingEnum.Address:
+					querable = querable.OrderBy(x => x.Address);
+
+					break;
+				case StudentOrderingEnum.Phone:
+					querable = querable.OrderBy(x => x.Phone);
+					break;
+				case StudentOrderingEnum.DepartmentName:
+					querable = querable.OrderBy(x => x.Department.DName);
+					break;
+			}
 			return querable;
 		}
+
+
 
 
 

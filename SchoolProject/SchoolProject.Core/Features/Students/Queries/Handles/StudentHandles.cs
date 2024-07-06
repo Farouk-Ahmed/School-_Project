@@ -48,7 +48,7 @@ namespace SchoolProject.Core.Features.Students.Queries.Handles
 		{
 			Expression<Func<Student, GetStudentPaginatedListResponse>> exception = e => new GetStudentPaginatedListResponse(e.StudID, e.Name, e.Address, e.Phone, e.Department.DName);
 			//var querabel = _studentServes.GetStudentsQueryable();
-			var FilterQueryble = _studentServes.FilterStudentsQueryable(request.Search);
+			var FilterQueryble = _studentServes.FilterStudentsQueryable(request.OrderBy, request.Search);
 			var paginationList = await FilterQueryble.Select(exception).ToPaginationListAsync(request.PageNumber, request.PageSize);
 			return paginationList;
 		}
