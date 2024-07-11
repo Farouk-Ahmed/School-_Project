@@ -36,7 +36,7 @@ namespace SchoolProject.Api.Controllers
 			return NewResult(await _mediator.Send(comment));
 		}
 		[HttpPut(Router.StudentRouting.Edit)]
-		public async Task<IActionResult> Edit([FromForm] EditStudentCommand comment)
+		public async Task<IActionResult> Edit([FromBody] EditStudentCommand comment)
 		{
 
 			return NewResult(await _mediator.Send(comment));

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "psSvurhlg0eNoSaBO3f5OEXVZlU8R4lLhb77BZYExWTgGzr3lRYfgEPXGiEjocBzNsAKgKjMhY8ReD8/ZjPR+Q==",
+  "dgSpecHash": "LfDA1xzQUUjXCTO6c4j/fXYSAuAs+egOil6HlTIfGwdtqa+0xeCBSGm2AGzF7eUtPKOHYBNyWC4Ivsjj2q9rug==",
   "success": true,
   "projectFilePath": "F:\\Farouk\\ITI\\dot Net API\\Clean Architecture Projects\\School-_Project\\SchoolProject\\SchoolProject.Core\\SchoolProject.Core.csproj",
   "expectedPackageFiles": [
@@ -28,6 +28,7 @@
     "C:\\Users\\farou\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
     "C:\\Users\\farou\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\8.0.0\\microsoft.extensions.dependencyinjection.8.0.0.nupkg.sha512",
     "C:\\Users\\farou\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\farou\\.nuget\\packages\\microsoft.extensions.localization.abstractions\\8.0.6\\microsoft.extensions.localization.abstractions.8.0.6.nupkg.sha512",
     "C:\\Users\\farou\\.nuget\\packages\\microsoft.extensions.logging\\8.0.0\\microsoft.extensions.logging.8.0.0.nupkg.sha512",
     "C:\\Users\\farou\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.0\\microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
     "C:\\Users\\farou\\.nuget\\packages\\microsoft.extensions.options\\8.0.0\\microsoft.extensions.options.8.0.0.nupkg.sha512",

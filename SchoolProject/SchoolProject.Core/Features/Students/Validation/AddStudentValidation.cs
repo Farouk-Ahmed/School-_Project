@@ -1,6 +1,8 @@
 ﻿
 using FluentValidation;
+using Microsoft.Extensions.Localization;
 using SchoolProject.Core.Features.Students.Commands.Models;
+using SchoolProject.Core.Resources;
 using SchoolProject.Service.Abstrcte;
 
 namespace SchoolProject.Core.Features.Students.Validation
@@ -9,22 +11,25 @@ namespace SchoolProject.Core.Features.Students.Validation
 	{
 		#region Fildes
 		private readonly IStudentServes _studentServes;
+		private readonly IStringLocalizer<SharedResourcesed> _localizer;
 		#endregion
 
 		#region Ctor
-		public AddStudentValidation(IStudentServes studentServes)
+		public AddStudentValidation(IStudentServes studentServes, IStringLocalizer<SharedResourcesed> Localizer)
 		{
+
+			this._studentServes = studentServes;
+			this._localizer = Localizer;
 			ApplyValidationsRules();
 			ApplyCustomeValidationsRules();
-			this._studentServes = studentServes;
 		}
 		#endregion
 		#region Actions
 		public void ApplyValidationsRules()
 		{
-			RuleFor(x => x.Name).NotEmpty().WithMessage("Name Must Not Be Empty")
-								.NotNull().WithMessage("Name Must Not Be Null")
-								.MaximumLength(20).WithMessage("The Name must not be more than 20 characters");
+			RuleFor(x => x.NameEn).NotEmpty().WithMessage(_localizer[SharedResourcesKeys.NotEmpty])
+								.NotNull().WithMessage(_localizer[SharedResourcesKeys.NotEmpty])
+								.MaximumLength(20).WithMessage("The Address must not be more than 20 characters");
 
 			RuleFor(x => x.Address).NotEmpty().WithMessage("Address Must Not Be Empty")
 									.NotNull().WithMessage("Address Must Not Be Null")
@@ -35,7 +40,7 @@ namespace SchoolProject.Core.Features.Students.Validation
 
 		public void ApplyCustomeValidationsRules()
 		{
-			RuleFor(x => x.Name)
+			RuleFor(x => x.NameEn)
 				.MustAsync(async (key, CancellationToken) => !await _studentServes.IsNameExist(key))
 				.WithMessage("Name Is Exist");
 
