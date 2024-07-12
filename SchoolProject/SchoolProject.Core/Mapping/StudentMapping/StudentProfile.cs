@@ -9,7 +9,7 @@ namespace SchoolProject.Core.Mapping.StudentMapping
 		public StudentProfile()
 		{
 			CreateMap<Student, GetStudentResponce>()
-			.ForMember(response => response.DepartmentName, options => options.MapFrom(Sour => Sour.Department.DNameEn))
+			.ForMember(response => response.DepartmentName, options => options.MapFrom(Sour => Sour.Department.DNameAr))
 			.ForMember(response => response.Name, options => options.MapFrom(Sour => Sour.GetLocalizer(Sour.NameAr, Sour.NameEn)));
 
 			//GetStudentListMapping();

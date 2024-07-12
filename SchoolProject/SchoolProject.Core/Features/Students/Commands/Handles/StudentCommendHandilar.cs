@@ -42,7 +42,7 @@ namespace SchoolProject.Core.Features.Students.Commands.Handles
 			//Return Not Found
 			if (Student == null) return NotFound<string>(_localizer[SharedResourcesKeys.NotFound]);
 			//Mapping Between Request and student
-			var StudentMapper = _mapper.Map<Student>(request);
+			var StudentMapper = _mapper.Map(request, Student);
 			//Call Service that make Edit
 			var Ruslt = await _studentServes.EditAsync(StudentMapper);
 			//Return response
