@@ -29,11 +29,11 @@ namespace SchoolProject.Core.Features.Students.Validation
 		{
 			RuleFor(x => x.NameEn).NotEmpty().WithMessage(_localizer[SharedResourcesKeys.NotEmpty])
 								.NotNull().WithMessage(_localizer[SharedResourcesKeys.NotEmpty])
-								.MaximumLength(20).WithMessage("The Address must not be more than 20 characters");
+								.MaximumLength(20).WithMessage(_localizer[SharedResourcesKeys.MaxLengthis20]);
 
-			RuleFor(x => x.Address).NotEmpty().WithMessage("Address Must Not Be Empty")
-									.NotNull().WithMessage("Address Must Not Be Null")
-									.MaximumLength(100).WithMessage("The Address must not be more than 100 characters");
+			RuleFor(x => x.Address).NotEmpty().WithMessage(_localizer[SharedResourcesKeys.NotEmpty])
+									.NotNull().WithMessage(_localizer[SharedResourcesKeys.NotEmpty])
+									.MaximumLength(20).WithMessage(_localizer[SharedResourcesKeys.MaxLengthis20]);
 
 			#endregion
 		}
@@ -42,7 +42,7 @@ namespace SchoolProject.Core.Features.Students.Validation
 		{
 			RuleFor(x => x.NameEn)
 				.MustAsync(async (key, CancellationToken) => !await _studentServes.IsNameExist(key))
-				.WithMessage("Name Is Exist");
+				.WithMessage(_localizer[SharedResourcesKeys.IsExist]);
 
 		}
 	}

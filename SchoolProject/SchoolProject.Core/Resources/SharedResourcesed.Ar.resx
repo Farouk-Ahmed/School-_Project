@@ -189,8 +189,8 @@
   <data name="IsNotExist" xml:space="preserve">
     <value> غير موجود</value>
   </data>
-  <data name="MaxLengthis100" xml:space="preserve">
-    <value>يجب ان لا يذيد طول النص عن 100 </value>
+  <data name="MaxLengthis20" xml:space="preserve">
+    <value>يجب ان لا يذيد طول النص عن 20</value>
   </data>
   <data name="Message" xml:space="preserve">
     <value>الرسالة</value>

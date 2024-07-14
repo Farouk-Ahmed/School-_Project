@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SchoolProject.Data.Entityes
 {
@@ -14,11 +9,14 @@ namespace SchoolProject.Data.Entityes
 		public int StudSubID { get; set; }
 		public int StudID { get; set; }
 		public int SubID { get; set; }
+		public decimal? grade { get; set; }
 
 		[ForeignKey("StudID")]
-		public virtual Student Student { get; set; }
+		[InverseProperty("StudentSubjects")]
+		public virtual Student? Student { get; set; }
 
 		[ForeignKey("SubID")]
-		public virtual Subjects Subject { get; set; }
+		[InverseProperty("StudentsSubjects")]
+		public virtual Subjects? Subject { get; set; }
 	}
 }
