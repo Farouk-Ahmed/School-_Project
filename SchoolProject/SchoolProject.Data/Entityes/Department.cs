@@ -13,7 +13,6 @@ namespace SchoolProject.Data.Entityes
 		}
 		[Key]
 		public int DID { get; set; }
-		[StringLength(500)]
 		public string? DNameEn { get; set; }
 		public string? DNameAr { get; set; }
 		public int? InsManager { get; set; }

@@ -48,7 +48,7 @@ namespace SchoolProject.Service.Implemntations
 		{
 			var Student = _studentRepository
 				.GetTableNoTracking()
-				.Where(x => x.NameAr.Equals(name))
+				.Where(x => x.NameEn.Equals(name))
 				.FirstOrDefault();
 			//Check if The Name is Exist or not
 			if (Student == null) return false;
