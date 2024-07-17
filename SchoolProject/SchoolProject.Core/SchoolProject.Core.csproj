@@ -45,4 +45,9 @@
     </EmbeddedResource>
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Features\Department\Commands\" />
+    <Folder Include="Mapping\DepartmentMapping\CommandMapping\" />
+  </ItemGroup>
+
 </Project>

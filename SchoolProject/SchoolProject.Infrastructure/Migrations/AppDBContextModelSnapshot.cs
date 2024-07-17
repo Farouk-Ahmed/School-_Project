@@ -178,7 +178,7 @@ namespace SchoolProject.Infrastructure.Migrations
                     b.Property<int>("StudSubID")
                         .HasColumnType("int");
 
-                    b.Property<decimal?>("grade")
+                    b.Property<decimal>("grade")
                         .HasColumnType("decimal(18,2)");
 
                     b.HasKey("SubID", "StudID");

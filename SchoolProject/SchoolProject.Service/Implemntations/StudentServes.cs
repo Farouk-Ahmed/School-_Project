@@ -107,7 +107,7 @@ namespace SchoolProject.Service.Implemntations
 			if (search != null)
 			{
 
-				querable = querable.Where(x => x.NameAr.Contains(search) || x.Address.Contains(search));
+				querable = querable.Where(x => x.NameEn.Contains(search) || x.Address.Contains(search));
 			}
 			switch (orderingEnum)
 			{
@@ -115,7 +115,7 @@ namespace SchoolProject.Service.Implemntations
 					querable = querable.OrderBy(x => x.StudID);
 					break;
 				case StudentOrderingEnum.Name:
-					querable = querable.OrderBy(x => x.NameAr);
+					querable = querable.OrderBy(x => x.NameEn);
 					break;
 				case StudentOrderingEnum.Address:
 					querable = querable.OrderBy(x => x.Address);
@@ -125,10 +125,15 @@ namespace SchoolProject.Service.Implemntations
 					querable = querable.OrderBy(x => x.Phone);
 					break;
 				case StudentOrderingEnum.DepartmentName:
-					querable = querable.OrderBy(x => x.Department.DNameAr);
+					querable = querable.OrderBy(x => x.Department.DNameEn);
 					break;
 			}
 			return querable;
+		}
+
+		public IQueryable<Student> GetStudentsDepartmentByIdQueryable(int DID)
+		{
+			return _studentRepository.GetTableNoTracking().Where(x => x.DID.Equals(DID)).AsQueryable();
 		}
 
 

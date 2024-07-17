@@ -146,6 +146,13 @@ F:\Farouk\ITI\dot Net API\Clean Architecture Projects\SchoolProject\SchoolProjec
 F:\Farouk\ITI\dot Net API\Clean Architecture Projects\SchoolProject\SchoolProject.Api\obj\Debug\net8.0\ref\SchoolProject.Api.dll
 F:\Farouk\ITI\dot Net API\Clean Architecture Projects\SchoolProject\SchoolProject.Api\bin\Debug\net8.0\AutoMapper.dll
 F:\Farouk\ITI\dot Net API\Clean Architecture Projects\SchoolProject\SchoolProject.Api\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+F:\Farouk\ITI\dot Net API\Clean Architecture Projects\School-_Project\SchoolProject\SchoolProject.Api\obj\Debug\net8.0\SchoolProject.Api.csproj.AssemblyReference.cache
+F:\Farouk\ITI\dot Net API\Clean Architecture Projects\School-_Project\SchoolProject\SchoolProject.Api\obj\Debug\net8.0\SchoolProject.Api.GeneratedMSBuildEditorConfig.editorconfig
+F:\Farouk\ITI\dot Net API\Clean Architecture Projects\School-_Project\SchoolProject\SchoolProject.Api\obj\Debug\net8.0\SchoolProject.Api.AssemblyInfoInputs.cache
+F:\Farouk\ITI\dot Net API\Clean Architecture Projects\School-_Project\SchoolProject\SchoolProject.Api\obj\Debug\net8.0\SchoolProject.Api.AssemblyInfo.cs
+F:\Farouk\ITI\dot Net API\Clean Architecture Projects\School-_Project\SchoolProject\SchoolProject.Api\obj\Debug\net8.0\SchoolProject.Api.csproj.CoreCompileInputs.cache
+F:\Farouk\ITI\dot Net API\Clean Architecture Projects\School-_Project\SchoolProject\SchoolProject.Api\obj\Debug\net8.0\SchoolProject.Api.MvcApplicationPartsAssemblyInfo.cache
+F:\Farouk\ITI\dot Net API\Clean Architecture Projects\School-_Project\SchoolProject\SchoolProject.Api\obj\Debug\net8.0\SchoolProject.Api.sourcelink.json
 F:\Farouk\ITI\dot Net API\Clean Architecture Projects\School-_Project\SchoolProject\SchoolProject.Api\bin\Debug\net8.0\appsettings.Development.json
 F:\Farouk\ITI\dot Net API\Clean Architecture Projects\School-_Project\SchoolProject\SchoolProject.Api\bin\Debug\net8.0\appsettings.json
 F:\Farouk\ITI\dot Net API\Clean Architecture Projects\School-_Project\SchoolProject\SchoolProject.Api\bin\Debug\net8.0\SchoolProject.Api.exe
@@ -278,13 +285,6 @@ F:\Farouk\ITI\dot Net API\Clean Architecture Projects\School-_Project\SchoolProj
 F:\Farouk\ITI\dot Net API\Clean Architecture Projects\School-_Project\SchoolProject\SchoolProject.Api\bin\Debug\net8.0\SchoolProject.Service.pdb
 F:\Farouk\ITI\dot Net API\Clean Architecture Projects\School-_Project\SchoolProject\SchoolProject.Api\bin\Debug\net8.0\Ar\SchoolProject.Core.resources.dll
 F:\Farouk\ITI\dot Net API\Clean Architecture Projects\School-_Project\SchoolProject\SchoolProject.Api\bin\Debug\net8.0\En\SchoolProject.Core.resources.dll
-F:\Farouk\ITI\dot Net API\Clean Architecture Projects\School-_Project\SchoolProject\SchoolProject.Api\obj\Debug\net8.0\SchoolProject.Api.csproj.AssemblyReference.cache
-F:\Farouk\ITI\dot Net API\Clean Architecture Projects\School-_Project\SchoolProject\SchoolProject.Api\obj\Debug\net8.0\SchoolProject.Api.GeneratedMSBuildEditorConfig.editorconfig
-F:\Farouk\ITI\dot Net API\Clean Architecture Projects\School-_Project\SchoolProject\SchoolProject.Api\obj\Debug\net8.0\SchoolProject.Api.AssemblyInfoInputs.cache
-F:\Farouk\ITI\dot Net API\Clean Architecture Projects\School-_Project\SchoolProject\SchoolProject.Api\obj\Debug\net8.0\SchoolProject.Api.AssemblyInfo.cs
-F:\Farouk\ITI\dot Net API\Clean Architecture Projects\School-_Project\SchoolProject\SchoolProject.Api\obj\Debug\net8.0\SchoolProject.Api.csproj.CoreCompileInputs.cache
-F:\Farouk\ITI\dot Net API\Clean Architecture Projects\School-_Project\SchoolProject\SchoolProject.Api\obj\Debug\net8.0\SchoolProject.Api.MvcApplicationPartsAssemblyInfo.cache
-F:\Farouk\ITI\dot Net API\Clean Architecture Projects\School-_Project\SchoolProject\SchoolProject.Api\obj\Debug\net8.0\SchoolProject.Api.sourcelink.json
 F:\Farouk\ITI\dot Net API\Clean Architecture Projects\School-_Project\SchoolProject\SchoolProject.Api\obj\Debug\net8.0\staticwebassets.build.json
 F:\Farouk\ITI\dot Net API\Clean Architecture Projects\School-_Project\SchoolProject\SchoolProject.Api\obj\Debug\net8.0\staticwebassets.development.json
 F:\Farouk\ITI\dot Net API\Clean Architecture Projects\School-_Project\SchoolProject\SchoolProject.Api\obj\Debug\net8.0\staticwebassets\msbuild.SchoolProject.Api.Microsoft.AspNetCore.StaticWebAssets.props
