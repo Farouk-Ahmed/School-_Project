@@ -24,7 +24,8 @@ builder.Services.AddDbContext<AppDBContext>(options =>
 #region Dependency Injections
 builder.Services.addInfrastructureDepencenc()
 				.addServiceDepencenc()
-				.addCoreDepencenc();
+				.addCoreDepencenc()
+				.AddServiceRegisteration();
 #endregion
 
 #region Localization

@@ -12,6 +12,7 @@ F:\Farouk\ITI\dot Net API\Clean Architecture Projects\SchoolProject\SchoolProjec
 F:\Farouk\ITI\dot Net API\Clean Architecture Projects\School-_Project\SchoolProject\SchoolProject.Data\bin\Debug\net8.0\SchoolProject.Data.deps.json
 F:\Farouk\ITI\dot Net API\Clean Architecture Projects\School-_Project\SchoolProject\SchoolProject.Data\bin\Debug\net8.0\SchoolProject.Data.dll
 F:\Farouk\ITI\dot Net API\Clean Architecture Projects\School-_Project\SchoolProject\SchoolProject.Data\bin\Debug\net8.0\SchoolProject.Data.pdb
+F:\Farouk\ITI\dot Net API\Clean Architecture Projects\School-_Project\SchoolProject\SchoolProject.Data\obj\Debug\net8.0\SchoolProject.Data.csproj.AssemblyReference.cache
 F:\Farouk\ITI\dot Net API\Clean Architecture Projects\School-_Project\SchoolProject\SchoolProject.Data\obj\Debug\net8.0\SchoolProject.Data.GeneratedMSBuildEditorConfig.editorconfig
 F:\Farouk\ITI\dot Net API\Clean Architecture Projects\School-_Project\SchoolProject\SchoolProject.Data\obj\Debug\net8.0\SchoolProject.Data.AssemblyInfoInputs.cache
 F:\Farouk\ITI\dot Net API\Clean Architecture Projects\School-_Project\SchoolProject\SchoolProject.Data\obj\Debug\net8.0\SchoolProject.Data.AssemblyInfo.cs

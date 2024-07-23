@@ -15,7 +15,7 @@
 		public const string MaxLengthis20 = "MaxLengthis20";
 		public const string IsExist = "IsExist";
 		public const string IsNotExist = "IsNotExist";
-		public const string DepartmementId = "DepartmementId";
+		public const string DepartmementIdisNotExist = "DepartmementIdISNotExist";
 		public const string PasswordNotEqualConfirmPass = "PasswordNotEqualConfirmPass";
 		public const string EmailIsExist = "EmailIsExist";
 		public const string UserNameIsExist = "UserNameIsExist";

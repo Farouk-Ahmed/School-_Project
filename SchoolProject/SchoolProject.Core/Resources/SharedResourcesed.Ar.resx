@@ -141,8 +141,8 @@
   <data name="DeletedFailed" xml:space="preserve">
     <value>حدث خطأ اثناء عملية حذف البيانات</value>
   </data>
-  <data name="DepartmementId" xml:space="preserve">
-    <value>رقم القسم</value>
+  <data name="DepartmementIdisNotExist" xml:space="preserve">
+    <value>رقم القسم عير موجود</value>
   </data>
   <data name="Email" xml:space="preserve">
     <value>الايميل</value>

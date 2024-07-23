@@ -1,9 +1,12 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using SchoolProject.Data.Entityes;
+using SchoolProject.Data.Entityes.Identity;
 
 namespace SchoolProject.Infrastructure.Data
 {
-	public class AppDBContext : DbContext
+	public class AppDBContext : IdentityDbContext<User, IdentityRole<int>, int, IdentityUserClaim<int>, IdentityUserRole<int>, IdentityUserLogin<int>, IdentityRoleClaim<int>, IdentityUserToken<int>>
 	{
 
 		public AppDBContext()
@@ -19,6 +22,7 @@ namespace SchoolProject.Infrastructure.Data
 		public DbSet<Subjects> Subjects { get; set; }
 		public DbSet<DepartmetSubject> DepartmetSubjects { get; set; }
 		public DbSet<StudentSubject> StudentSubjects { get; set; }
+		public DbSet<User> User { get; set; }
 
 		protected override void OnModelCreating(ModelBuilder modelBuilder)
 		{
@@ -45,6 +49,8 @@ namespace SchoolProject.Infrastructure.Data
 			#region Subject
 			modelBuilder.Entity<Subjects>().Property(sub => sub.SubjectNameEn).HasColumnName("Name in English").HasMaxLength(50);
 			modelBuilder.Entity<Subjects>().Property(sub => sub.SubjectNameAr).HasColumnName("Name in Arabic ").HasMaxLength(50);
+
+
 			#endregion
 
 
