@@ -47,6 +47,9 @@
 
   <ItemGroup>
     <Folder Include="Features\Department\Commands\" />
+    <Folder Include="Features\AppUser\Queries\Handles\" />
+    <Folder Include="Features\AppUser\Queries\Models\" />
+    <Folder Include="Mapping\AppUser\Queries\" />
     <Folder Include="Mapping\DepartmentMapping\CommandMapping\" />
   </ItemGroup>
 

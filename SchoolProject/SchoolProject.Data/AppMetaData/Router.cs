@@ -22,6 +22,12 @@
 			public const string GetById = prefix + "/Id";
 
 		}
+		public static class AppUserRouting
+		{
+			public const string prefix = Roul + "User";
+			public const string Create = prefix + "/Create";
+
+		}
 
 	}
 }

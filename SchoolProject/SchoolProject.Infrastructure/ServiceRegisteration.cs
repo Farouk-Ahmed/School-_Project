@@ -12,32 +12,35 @@ namespace SchoolProject.Infrastructure
 		{
 
 
-			services.AddIdentity<User, IdentityRole>(options =>
+			services.AddIdentity<User, IdentityRole<int>>(option =>
 			{
 				// Password settings.
-				options.Password.RequireDigit = true;
-				options.Password.RequireLowercase = true;
-				options.Password.RequireNonAlphanumeric = true;
-				options.Password.RequireUppercase = true;
-				options.Password.RequiredLength = 6;
-				options.Password.RequiredUniqueChars = 1;
+				option.Password.RequireDigit = true;
+				option.Password.RequireLowercase = true;
+				option.Password.RequireNonAlphanumeric = true;
+				option.Password.RequireUppercase = true;
+				option.Password.RequiredLength = 6;
+				option.Password.RequiredUniqueChars = 1;
 
 				// Lockout settings.
-				options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(5);
-				options.Lockout.MaxFailedAccessAttempts = 5;
-				options.Lockout.AllowedForNewUsers = true;
+				option.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(5);
+				option.Lockout.MaxFailedAccessAttempts = 5;
+				option.Lockout.AllowedForNewUsers = true;
 
 				// User settings.
-				options.User.AllowedUserNameCharacters =
+				option.User.AllowedUserNameCharacters =
 				"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-._@+";
-				options.User.RequireUniqueEmail = true;
-				options.SignIn.RequireConfirmedEmail = true;
-			})
-				.AddRoles<IdentityRole<int>>() // Add support for roles.
-				.AddEntityFrameworkStores<AppDBContext>() // Configure Entity Framework stores.
-				.AddTokenProvider<EmailTokenProvider<User>>(TokenOptions.DefaultEmailProvider);         // Add default token providers.
+				option.User.RequireUniqueEmail = true;
 
+
+			})
+				.AddEntityFrameworkStores<AppDBContext>()
+				.AddDefaultTokenProviders();
 			return services;
 		}
+
+
+
+
 	}
 }
