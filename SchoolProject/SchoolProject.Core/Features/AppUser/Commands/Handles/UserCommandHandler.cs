@@ -36,7 +36,7 @@ namespace SchoolProject.Core.Features.AppUser.Commands.Handles
 			//If Email Exist
 			var user = await _userManager.FindByEmailAsync(request.Email);
 			//Email is Exist
-			if (user == null) return BadRequest<string>(_localizer[SharedResourcesKeys.EmailIsExist]);
+			if (user != null) return BadRequest<string>(_localizer[SharedResourcesKeys.EmailIsExist]);
 
 			//If UserName Exist
 			var Byusername = _userManager.FindByNameAsync(request.UserName);

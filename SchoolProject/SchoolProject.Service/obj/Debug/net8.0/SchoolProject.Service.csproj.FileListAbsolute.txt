@@ -15,12 +15,6 @@ F:\Farouk\ITI\dot Net API\Clean Architecture Projects\SchoolProject\SchoolProjec
 F:\Farouk\ITI\dot Net API\Clean Architecture Projects\SchoolProject\SchoolProject.Service\obj\Debug\net8.0\refint\SchoolProject.Service.dll
 F:\Farouk\ITI\dot Net API\Clean Architecture Projects\SchoolProject\SchoolProject.Service\obj\Debug\net8.0\SchoolProject.Service.pdb
 F:\Farouk\ITI\dot Net API\Clean Architecture Projects\SchoolProject\SchoolProject.Service\obj\Debug\net8.0\ref\SchoolProject.Service.dll
-F:\Farouk\ITI\dot Net API\Clean Architecture Projects\School-_Project\SchoolProject\SchoolProject.Service\obj\Debug\net8.0\SchoolProject.Service.csproj.AssemblyReference.cache
-F:\Farouk\ITI\dot Net API\Clean Architecture Projects\School-_Project\SchoolProject\SchoolProject.Service\obj\Debug\net8.0\SchoolProject.Service.GeneratedMSBuildEditorConfig.editorconfig
-F:\Farouk\ITI\dot Net API\Clean Architecture Projects\School-_Project\SchoolProject\SchoolProject.Service\obj\Debug\net8.0\SchoolProject.Service.AssemblyInfoInputs.cache
-F:\Farouk\ITI\dot Net API\Clean Architecture Projects\School-_Project\SchoolProject\SchoolProject.Service\obj\Debug\net8.0\SchoolProject.Service.AssemblyInfo.cs
-F:\Farouk\ITI\dot Net API\Clean Architecture Projects\School-_Project\SchoolProject\SchoolProject.Service\obj\Debug\net8.0\SchoolProject.Service.csproj.CoreCompileInputs.cache
-F:\Farouk\ITI\dot Net API\Clean Architecture Projects\School-_Project\SchoolProject\SchoolProject.Service\obj\Debug\net8.0\SchoolProject.Service.sourcelink.json
 F:\Farouk\ITI\dot Net API\Clean Architecture Projects\School-_Project\SchoolProject\SchoolProject.Service\bin\Debug\net8.0\SchoolProject.Service.deps.json
 F:\Farouk\ITI\dot Net API\Clean Architecture Projects\School-_Project\SchoolProject\SchoolProject.Service\bin\Debug\net8.0\SchoolProject.Service.dll
 F:\Farouk\ITI\dot Net API\Clean Architecture Projects\School-_Project\SchoolProject\SchoolProject.Service\bin\Debug\net8.0\SchoolProject.Service.pdb
@@ -28,6 +22,12 @@ F:\Farouk\ITI\dot Net API\Clean Architecture Projects\School-_Project\SchoolProj
 F:\Farouk\ITI\dot Net API\Clean Architecture Projects\School-_Project\SchoolProject\SchoolProject.Service\bin\Debug\net8.0\SchoolProject.Infrastructure.dll
 F:\Farouk\ITI\dot Net API\Clean Architecture Projects\School-_Project\SchoolProject\SchoolProject.Service\bin\Debug\net8.0\SchoolProject.Data.pdb
 F:\Farouk\ITI\dot Net API\Clean Architecture Projects\School-_Project\SchoolProject\SchoolProject.Service\bin\Debug\net8.0\SchoolProject.Infrastructure.pdb
+F:\Farouk\ITI\dot Net API\Clean Architecture Projects\School-_Project\SchoolProject\SchoolProject.Service\obj\Debug\net8.0\SchoolProject.Service.csproj.AssemblyReference.cache
+F:\Farouk\ITI\dot Net API\Clean Architecture Projects\School-_Project\SchoolProject\SchoolProject.Service\obj\Debug\net8.0\SchoolProject.Service.GeneratedMSBuildEditorConfig.editorconfig
+F:\Farouk\ITI\dot Net API\Clean Architecture Projects\School-_Project\SchoolProject\SchoolProject.Service\obj\Debug\net8.0\SchoolProject.Service.AssemblyInfoInputs.cache
+F:\Farouk\ITI\dot Net API\Clean Architecture Projects\School-_Project\SchoolProject\SchoolProject.Service\obj\Debug\net8.0\SchoolProject.Service.AssemblyInfo.cs
+F:\Farouk\ITI\dot Net API\Clean Architecture Projects\School-_Project\SchoolProject\SchoolProject.Service\obj\Debug\net8.0\SchoolProject.Service.csproj.CoreCompileInputs.cache
+F:\Farouk\ITI\dot Net API\Clean Architecture Projects\School-_Project\SchoolProject\SchoolProject.Service\obj\Debug\net8.0\SchoolProject.Service.sourcelink.json
 F:\Farouk\ITI\dot Net API\Clean Architecture Projects\School-_Project\SchoolProject\SchoolProject.Service\obj\Debug\net8.0\SchoolProject.Service.csproj.CopyComplete
 F:\Farouk\ITI\dot Net API\Clean Architecture Projects\School-_Project\SchoolProject\SchoolProject.Service\obj\Debug\net8.0\SchoolProject.Service.dll
 F:\Farouk\ITI\dot Net API\Clean Architecture Projects\School-_Project\SchoolProject\SchoolProject.Service\obj\Debug\net8.0\refint\SchoolProject.Service.dll
