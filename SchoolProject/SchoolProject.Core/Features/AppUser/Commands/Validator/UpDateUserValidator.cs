@@ -23,7 +23,7 @@ namespace SchoolProject.Core.Features.AppUser.Commands.Validator
 		#region Hundle Func
 		public void ApplyValidationsRules()
 		{
-			RuleFor(x => x.FullName).NotEmpty().WithMessage(_localizer[SharedResourcesKeys.NoImage])
+			RuleFor(x => x.FullName).NotEmpty().WithMessage(_localizer[SharedResourcesKeys.NotEmpty])
 							.NotNull().WithMessage(_localizer[SharedResourcesKeys.Required])
 			.MaximumLength(20).WithMessage(_localizer[SharedResourcesKeys.MaxLengthis20]);
 

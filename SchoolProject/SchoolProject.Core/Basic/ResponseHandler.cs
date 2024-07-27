@@ -44,7 +44,7 @@ namespace SchoolProject.Core.Basic
 		{
 			return new Response<T>()
 			{
-				StatusCode = System.Net.HttpStatusCode.BadRequest,
+				StatusCode = System.Net.HttpStatusCode.OK,
 				Succeeded = false,
 				Message = Message == null ? "Bad Request" : Message
 			};
@@ -77,6 +77,18 @@ namespace SchoolProject.Core.Basic
 				Succeeded = true,
 				Message = _Localizer[SharedResourcesKeys.Created],
 				Meta = Meta
+			};
+		}
+		public Response<T> Delete<T>(T entity, object Meta = null)
+		{
+			return new Response<T>()
+			{
+				Data = entity,
+				StatusCode = System.Net.HttpStatusCode.BadRequest,
+				Succeeded = false,
+				Message = _Localizer[SharedResourcesKeys.DeletedFailed],
+
+
 			};
 		}
 	}
