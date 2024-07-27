@@ -25,10 +25,17 @@ namespace SchoolProject.Api.Controllers
 		}
 
 		[HttpGet(Router.AppUserRouting.GetById)]
-		public async Task<IActionResult> GetStudentByID([FromRoute] int id)
+		public async Task<IActionResult> GetuserByID([FromRoute] int id)
 		{
 
 			return NewResult(await _mediator.Send(new GetSingelUserQuery(id)));
+		}
+		[HttpPut(Router.AppUserRouting.Edit)]
+
+		public async Task<IActionResult> Edit([FromBody] UpDateUserCommand comment)
+		{
+
+			return NewResult(await _mediator.Send(comment));
 		}
 	}
 }

@@ -9,7 +9,9 @@ using SchoolProject.Data.Entityes.Identity;
 
 namespace SchoolProject.Core.Features.AppUser.Commands.Handles
 {
-	public class UserCommandHandler : ResponseHandler, IRequestHandler<AddUserCommand, Response<string>>
+	public class UserCommandHandler : ResponseHandler,
+		IRequestHandler<AddUserCommand, Response<string>>,
+		IRequestHandler<UpDateUserCommand, Response<string>>
 	{
 		#region Fildes
 		private readonly IStringLocalizer<SharedResourcesed> _localizer;
@@ -56,6 +58,25 @@ namespace SchoolProject.Core.Features.AppUser.Commands.Handles
 			//Sucess
 			return Created("");
 
+		}
+
+		public async Task<Response<string>> Handle(UpDateUserCommand request, CancellationToken cancellationToken)
+		{
+			//check if user exist
+			var olduser = await _userManager.FindByIdAsync(request.Id.ToString());
+			//not found
+			if (olduser == null) return NotFound<string>();
+			//mapping
+			var newuser = _mapper.Map(request, olduser);
+			//update
+			var resul = await _userManager.UpdateAsync(newuser);
+			//result is not success
+			if (!resul.Succeeded)
+			{
+				return BadRequest<string>(_localizer[SharedResourcesKeys.UpdateFailed]);
+			}
+			//message
+			return Success("");
 		}
 
 		#endregion

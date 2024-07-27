@@ -28,6 +28,8 @@
 			public const string Create = prefix + "/Create";
 			public const string Paginated = prefix + "/Paginated";
 			public const string GetById = prefix + "/{id}";
+			public const string Edit = prefix + "/Edit";
+
 
 
 		}
