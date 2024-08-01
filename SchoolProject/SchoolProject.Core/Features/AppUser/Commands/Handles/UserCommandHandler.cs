@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using MediatR;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Localization;
 using SchoolProject.Core.Basic;
 using SchoolProject.Core.Features.AppUser.Commands.Models;
@@ -12,7 +13,8 @@ namespace SchoolProject.Core.Features.AppUser.Commands.Handles
 	public class UserCommandHandler : ResponseHandler,
 		IRequestHandler<AddUserCommand, Response<string>>,
 		IRequestHandler<UpDateUserCommand, Response<string>>,
-		IRequestHandler<DeleteUserCommand, Response<string>>
+		IRequestHandler<DeleteUserCommand, Response<string>>,
+		IRequestHandler<ChangeUserPasswordCommand, Response<string>>
 	{
 		#region Fildes
 		private readonly IStringLocalizer<SharedResourcesed> _localizer;
@@ -69,6 +71,11 @@ namespace SchoolProject.Core.Features.AppUser.Commands.Handles
 			if (olduser == null) return NotFound<string>();
 			//mapping
 			var newuser = _mapper.Map(request, olduser);
+			// if user is exist
+
+			var userbyuser = await _userManager.Users.FirstOrDefaultAsync(x => x.UserName == newuser.UserName && x.Id != newuser.Id);
+
+			if (userbyuser != null) return BadRequest<string>(_localizer[SharedResourcesKeys.BadRequest]);
 			//update
 			var resul = await _userManager.UpdateAsync(newuser);
 			//result is not success
@@ -91,12 +98,35 @@ namespace SchoolProject.Core.Features.AppUser.Commands.Handles
 			// in case of failed
 			if (!Ruslt.Succeeded)
 			{
-				return BadRequest<string>(_localizer[SharedResourcesKeys.DeletedFailed]);
+				return BadRequest<string>(_localizer[SharedResourcesKeys.Deleted]);
 			}
 			//message
-			return Delete((string)_localizer[SharedResourcesKeys.DeletedFailed]);
+			return Delete((string)_localizer[SharedResourcesKeys.Deleted]);
 
 
+
+		}
+
+		public async Task<Response<string>> Handle(ChangeUserPasswordCommand request, CancellationToken cancellationToken)
+		{
+			//git user
+			// check if user is exist
+			var user = await _userManager.FindByIdAsync(request.Id.ToString());
+			//if not exist not found
+			if (user == null) return NotFound<string>();
+			//change user password
+			var resul = await _userManager.ChangePasswordAsync(user, request.CurrentPassword, request.NewPassword);
+			//var user1 = await _userManager.HasPasswordAsync(user);
+			//await _userManager.RemovePasswordAsync(user);
+			//await _userManager.AddPasswordAsync(user, request.NewPassword);
+
+			//Result
+			if (!resul.Succeeded)
+			{
+				return BadRequest<string>(_localizer[SharedResourcesKeys.ChangePassFailed]);
+			}
+			//message
+			return Success((string)_localizer[SharedResourcesKeys.Success]);
 
 		}
 
