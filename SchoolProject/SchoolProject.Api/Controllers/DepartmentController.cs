@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using SchoolProject.Api.Base;
 using SchoolProject.Core.Features.Department.Queries.Models;
-using Router = SchoolProject.Data.AppMetaData.Router;
+using RouteApp = SchoolProject.Data.AppMetaData.RouteApp;
 
 namespace SchoolProject.Api.Controllers
 {
@@ -9,7 +9,7 @@ namespace SchoolProject.Api.Controllers
 	[ApiController]
 	public class DepartmentController : AppControllerBase
 	{
-		[HttpGet(Router.DepartmentRouting.GetById)]
+		[HttpGet(RouteApp.DepartmentRouting.GetById)]
 		public async Task<IActionResult> GetDepartmentByID([FromQuery] GetDepartmebtByIdQueries byIdQueries)
 		{
 

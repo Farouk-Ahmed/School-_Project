@@ -1,6 +1,6 @@
 ﻿namespace SchoolProject.Data.AppMetaData
 {
-	public static class Router
+	public static class RouteApp
 	{
 		public const string root = "Api";
 		public const string version = "V1";
@@ -35,6 +35,11 @@
 
 
 
+		}
+		public static class Authentication
+		{
+			public const string prefix = Roul + "Authentication";
+			public const string signin = prefix + "/SginIn";
 		}
 
 	}

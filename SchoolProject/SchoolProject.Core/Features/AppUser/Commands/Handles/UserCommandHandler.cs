@@ -123,7 +123,7 @@ namespace SchoolProject.Core.Features.AppUser.Commands.Handles
 			//Result
 			if (!resul.Succeeded)
 			{
-				return BadRequest<string>(_localizer[SharedResourcesKeys.ChangePassFailed]);
+				return BadRequest<string>(resul.Errors.FirstOrDefault().Description);
 			}
 			//message
 			return Success((string)_localizer[SharedResourcesKeys.Success]);
