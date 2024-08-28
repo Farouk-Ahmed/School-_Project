@@ -282,6 +282,45 @@ namespace SchoolProject.Infrastructure.Migrations
                     b.ToTable("AspNetUsers", "School");
                 });
 
+            modelBuilder.Entity("SchoolProject.Data.Entityes.Identity.UserRefreshToken", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("AddTime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("ExpiryDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool>("IsRevoked")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("IsUsed")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("JWTId")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("RefreshToken")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Token")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("userRefreshTokens", "School");
+                });
+
             modelBuilder.Entity("SchoolProject.Data.Entityes.Ins_Subject", b =>
                 {
                     b.Property<int>("SubId")
@@ -505,6 +544,17 @@ namespace SchoolProject.Infrastructure.Migrations
                     b.Navigation("Subject");
                 });
 
+            modelBuilder.Entity("SchoolProject.Data.Entityes.Identity.UserRefreshToken", b =>
+                {
+                    b.HasOne("SchoolProject.Data.Entityes.Identity.User", "User")
+                        .WithMany("UserRefreshTokens")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("SchoolProject.Data.Entityes.Ins_Subject", b =>
                 {
                     b.HasOne("SchoolProject.Data.Entityes.Instructor", "instructor")
@@ -577,6 +627,11 @@ namespace SchoolProject.Infrastructure.Migrations
                     b.Navigation("Instructors");
 
                     b.Navigation("Students");
+                });
+
+            modelBuilder.Entity("SchoolProject.Data.Entityes.Identity.User", b =>
+                {
+                    b.Navigation("UserRefreshTokens");
                 });
 
             modelBuilder.Entity("SchoolProject.Data.Entityes.Instructor", b =>

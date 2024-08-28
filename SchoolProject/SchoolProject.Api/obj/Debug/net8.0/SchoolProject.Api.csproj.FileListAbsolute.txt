@@ -189,6 +189,7 @@ F:\Farouk\ITI\dot Net API\Clean Architecture Projects\School-_Project\SchoolProj
 F:\Farouk\ITI\dot Net API\Clean Architecture Projects\School-_Project\SchoolProject\SchoolProject.Api\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
 F:\Farouk\ITI\dot Net API\Clean Architecture Projects\School-_Project\SchoolProject\SchoolProject.Api\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
 F:\Farouk\ITI\dot Net API\Clean Architecture Projects\School-_Project\SchoolProject\SchoolProject.Api\bin\Debug\net8.0\Mono.TextTemplating.dll
+F:\Farouk\ITI\dot Net API\Clean Architecture Projects\School-_Project\SchoolProject\SchoolProject.Api\bin\Debug\net8.0\Swashbuckle.AspNetCore.Annotations.dll
 F:\Farouk\ITI\dot Net API\Clean Architecture Projects\School-_Project\SchoolProject\SchoolProject.Api\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
 F:\Farouk\ITI\dot Net API\Clean Architecture Projects\School-_Project\SchoolProject\SchoolProject.Api\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 F:\Farouk\ITI\dot Net API\Clean Architecture Projects\School-_Project\SchoolProject\SchoolProject.Api\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
@@ -285,7 +286,6 @@ F:\Farouk\ITI\dot Net API\Clean Architecture Projects\School-_Project\SchoolProj
 F:\Farouk\ITI\dot Net API\Clean Architecture Projects\School-_Project\SchoolProject\SchoolProject.Api\obj\Debug\net8.0\SchoolProject.Api.AssemblyInfoInputs.cache
 F:\Farouk\ITI\dot Net API\Clean Architecture Projects\School-_Project\SchoolProject\SchoolProject.Api\obj\Debug\net8.0\SchoolProject.Api.AssemblyInfo.cs
 F:\Farouk\ITI\dot Net API\Clean Architecture Projects\School-_Project\SchoolProject\SchoolProject.Api\obj\Debug\net8.0\SchoolProject.Api.csproj.CoreCompileInputs.cache
-F:\Farouk\ITI\dot Net API\Clean Architecture Projects\School-_Project\SchoolProject\SchoolProject.Api\obj\Debug\net8.0\SchoolProject.Api.MvcApplicationPartsAssemblyInfo.cs
 F:\Farouk\ITI\dot Net API\Clean Architecture Projects\School-_Project\SchoolProject\SchoolProject.Api\obj\Debug\net8.0\SchoolProject.Api.MvcApplicationPartsAssemblyInfo.cache
 F:\Farouk\ITI\dot Net API\Clean Architecture Projects\School-_Project\SchoolProject\SchoolProject.Api\obj\Debug\net8.0\SchoolProject.Api.sourcelink.json
 F:\Farouk\ITI\dot Net API\Clean Architecture Projects\School-_Project\SchoolProject\SchoolProject.Api\obj\Debug\net8.0\staticwebassets.build.json
@@ -302,4 +302,3 @@ F:\Farouk\ITI\dot Net API\Clean Architecture Projects\School-_Project\SchoolProj
 F:\Farouk\ITI\dot Net API\Clean Architecture Projects\School-_Project\SchoolProject\SchoolProject.Api\obj\Debug\net8.0\SchoolProject.Api.pdb
 F:\Farouk\ITI\dot Net API\Clean Architecture Projects\School-_Project\SchoolProject\SchoolProject.Api\obj\Debug\net8.0\SchoolProject.Api.genruntimeconfig.cache
 F:\Farouk\ITI\dot Net API\Clean Architecture Projects\School-_Project\SchoolProject\SchoolProject.Api\obj\Debug\net8.0\ref\SchoolProject.Api.dll
-F:\Farouk\ITI\dot Net API\Clean Architecture Projects\School-_Project\SchoolProject\SchoolProject.Api\bin\Debug\net8.0\Swashbuckle.AspNetCore.Annotations.dll

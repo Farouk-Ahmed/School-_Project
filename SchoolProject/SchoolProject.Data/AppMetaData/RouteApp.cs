@@ -40,6 +40,8 @@
 		{
 			public const string prefix = Roul + "Authentication";
 			public const string signin = prefix + "/SginIn";
+			public const string RefreshToken = prefix + "/Refresh-Token";
+			public const string ValidateToken = prefix + "/Validate-Token";
 		}
 
 	}

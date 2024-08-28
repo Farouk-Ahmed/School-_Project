@@ -28,8 +28,8 @@ namespace SchoolProject.Infrastructure
 				option.Password.RequiredUniqueChars = 1;
 
 				// Lockout settings.
-				option.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(15);
-				option.Lockout.MaxFailedAccessAttempts = 15;
+				option.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(5);
+				option.Lockout.MaxFailedAccessAttempts = 5;
 				option.Lockout.AllowedForNewUsers = true;
 
 				// User settings.
@@ -55,21 +55,21 @@ namespace SchoolProject.Infrastructure
 				x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
 				x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
 			})
-   .AddJwtBearer(x =>
-   {
-	   x.RequireHttpsMetadata = false;
-	   x.SaveToken = true;
-	   x.TokenValidationParameters = new TokenValidationParameters
-	   {
-		   ValidateIssuer = jwtSettings.ValidateIssuer,
-		   ValidIssuers = new[] { jwtSettings.Issuer },
-		   ValidateIssuerSigningKey = jwtSettings.ValidateIssuerSigningKey,
-		   IssuerSigningKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(jwtSettings.Secret)),
-		   ValidAudience = jwtSettings.Audience,
-		   ValidateAudience = jwtSettings.ValidateAudience,
-		   ValidateLifetime = jwtSettings.ValidateLifeTime,
-	   };
-   });
+			   .AddJwtBearer(x =>
+			   {
+				   x.RequireHttpsMetadata = false;
+				   x.SaveToken = true;
+				   x.TokenValidationParameters = new TokenValidationParameters
+				   {
+					   ValidateIssuer = jwtSettings.ValidateIssuer,
+					   ValidIssuers = new[] { jwtSettings.Issuer },
+					   ValidateIssuerSigningKey = jwtSettings.ValidateIssuerSigningKey,
+					   IssuerSigningKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(jwtSettings.Secret)),
+					   ValidAudience = jwtSettings.Audience,
+					   ValidateAudience = jwtSettings.ValidateAudience,
+					   ValidateLifetime = jwtSettings.ValidateLifeTime,
+				   };
+			   });
 			#region Scheme of Swagger
 			//Swagger Gn
 			//Instal Swashbuckle.AspNetCore.Swagger

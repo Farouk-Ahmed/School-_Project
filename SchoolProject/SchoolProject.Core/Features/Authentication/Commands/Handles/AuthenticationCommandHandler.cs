@@ -5,13 +5,15 @@ using SchoolProject.Core.Basic;
 using SchoolProject.Core.Features.Authentication.Commands.Models;
 using SchoolProject.Core.Resources;
 using SchoolProject.Data.Entityes.Identity;
+using SchoolProject.Data.Helpers;
 using SchoolProject.Service.Abstrcte;
 
 namespace SchoolProject.Core.Features.Authentication.Commands.Handles
 {
 	public class AuthenticationCommandHandler : ResponseHandler,
 
-		IRequestHandler<signinCommand, Response<string>>
+		IRequestHandler<signinCommand, Response<JWTAuthResult>>,
+		IRequestHandler<RefreshTokenCommand, Response<JWTAuthResult>>
 	{
 		#region Fields
 		private readonly IStringLocalizer<SharedResourcesed> _localizer;
@@ -33,20 +35,26 @@ namespace SchoolProject.Core.Features.Authentication.Commands.Handles
 
 		#endregion
 		#region Handel Func
-		public async Task<Response<string>> Handle(signinCommand request, CancellationToken cancellationToken)
+		public async Task<Response<JWTAuthResult>> Handle(signinCommand request, CancellationToken cancellationToken)
 		{
 			//check if user is exist
 			var user = await _userManager.FindByNameAsync(request.UserName);
 			//Return Usr name not found
-			if (user == null) return BadRequest<string>(_localizer[SharedResourcesKeys.UserNameIsNotExist]);
+			if (user == null) return BadRequest<JWTAuthResult>(_localizer[SharedResourcesKeys.UserNameIsNotExist]);
 			//Try to sign in
-			var sigIn = _signIn.CheckPasswordSignInAsync(user, request.PassWord, false);
+			var sigIn = await _signIn.CheckPasswordSignInAsync(user, request.PassWord, false);
 			//if faild return password is wrong
-			if (!sigIn.IsCompletedSuccessfully) return BadRequest<string>(_localizer[SharedResourcesKeys.PasswordNotCorrect]);
+			if (!sigIn.Succeeded) return BadRequest<JWTAuthResult>(_localizer[SharedResourcesKeys.PasswordNotCorrect]);
 			//Generate token
 			var token = await _authentication.Get_JWTToken(user);
 			//Rutern token
 			return Success(token);
+		}
+
+		public async Task<Response<JWTAuthResult>> Handle(RefreshTokenCommand request, CancellationToken cancellationToken)
+		{
+			var Ruslt = await _authentication.Get_RefreshToken(request.AccessToken, request.RefreshToken);
+			return Success(Ruslt);
 		}
 		#endregion
 	}
